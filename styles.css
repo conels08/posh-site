@@ -42,6 +42,30 @@ img, svg, video, canvas {
   display: block;
 }
 
+/* Hard stop: no layout can be wider than the viewport */
+main, header, footer, .hero, .section, .grid, .services-grid, .gallery-grid, .contact-wrap {
+  max-width: 100vw;
+}
+
+/* Absolutely no horizontal scroll from fixed/absolute layers */
+.progress, .site-header, .nav, .hero-bg {
+  left: 0;
+  right: 0;
+}
+
+/* When a background image is used as a hero, keep it inside the viewport */
+.hero-bg {
+  display: block;            /* prevents inline-image whitespace quirks */
+  max-width: 100vw;          /* clamp image box itself */
+}
+
+/* Extra safety in case any card content or long link tries to overflow */
+.card, .service, .contact-form, .contact-info .card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+
 /* Safety clamps to stop any child from pushing the page wider */
 .section{ overflow-x: clip; }  /* clip is better than hidden for perf */
 .grid, .services-grid, .gallery-grid, .contact-wrap{
