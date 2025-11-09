@@ -89,6 +89,17 @@ const progressBar = document.getElementById("progressBar");
 const navToggle = document.getElementById("navToggle");
 const siteNav = document.getElementById("siteNav");
 
+// Sync --header-h to the actual fixed header height
+function syncHeaderHeight() {
+  const h =
+    document.querySelector(".site-header")?.getBoundingClientRect().height ||
+    64;
+  document.documentElement.style.setProperty("--header-h", `${h}px`);
+}
+syncHeaderHeight();
+window.addEventListener("load", syncHeaderHeight);
+window.addEventListener("resize", syncHeaderHeight);
+
 /* Render Artist Cards */
 function renderArtists(filter = "all") {
   if (!artistGrid) return;
