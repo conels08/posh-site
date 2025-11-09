@@ -4,92 +4,77 @@
 
 /**
  * ARTIST DIRECTORY
- * Replace placeholders with real people as you get them.
- * - 'services' tags drive the filter.
- * - 'links' include website/booking/socials. Use null for any you don't have yet.
- * - Images are Unsplash placeholders; swap file paths or URLs when ready.
+ * Replace placeholders as you get final details.
+ * - services: hair, esthetics, injectables
+ * - images: picsum seeds to guarantee loading; swap with real images later
+ *   Search for "UPDATE PHOTO:" comments to find them quickly.
  */
 const ARTISTS = [
   {
     id: "owner-cyndie",
-    name: "Cyndie Nelsen", // TODO: confirm spelling/name
-    role: "Owner • Master Stylist",
+    name: "Cyndie Phillips",
+    role: "Owner • Beautician",
     services: ["hair"],
-    photo:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+    // UPDATE PHOTO: Owner headshot
+    photo: "https://picsum.photos/seed/cyndie-hs-2/800/600",
     blurb:
-      "Precision cuts, color, and transformative styling with a soft, modern finish.",
-    email: "cyndie@poshnewberg.com", // TODO: update
-    phone: "(503) 555-0101", // TODO: update
+      "Experienced beautician specializing in precision cuts, classic color, and healthy hair.",
+    email: "cyndie@poshnewberg.com", // TODO: update when ready
+    phone: "(503) 538-7056",
     links: {
-      website: null, // e.g., "https://poshnewberg.com/cyndie"
+      website: null, // e.g. "https://poshnewberg.com/cyndie"
       booking: "#contact",
       instagram: "#",
     },
   },
   {
-    id: "stylist-avery",
-    name: "Avery Hart",
-    role: "Color Specialist",
+    id: "hair-riley",
+    name: "Riley Johnisee",
+    role: "Stylist",
     services: ["hair"],
-    photo:
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop",
-    blurb: "Dimensional color, blonding, and lived-in looks.",
-    email: "avery@poshnewberg.com",
-    phone: "(503) 555-0102",
+    // UPDATE PHOTO: Riley headshot
+    photo: "https://picsum.photos/seed/riley-hs-3/800/600",
+    blurb: "Cut, color, and styles tailored to your vibe. Book online.",
+    email: "riley@poshnewberg.com", // placeholder
+    phone: "(503) 555-0111", // placeholder
     links: {
-      website: "https://example.com/avery", // TODO: replace with tenant's real site
-      booking: "https://calendly.com/example-avery", // TODO
-      instagram: "https://instagram.com/avery_hair", // TODO
+      website: "https://hairbyrileyyy.glossgenius.com",
+      booking: "https://hairbyrileyyy.glossgenius.com",
+      instagram: "#",
     },
   },
   {
-    id: "nails-luna",
-    name: "Luna Park",
-    role: "Nail Artist",
-    services: ["nails"],
-    photo:
-      "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=800&auto=format&fit=crop",
-    blurb: "Structured gel, minimal art, and healthy nail care.",
-    email: "luna@poshnewberg.com",
-    phone: "(503) 555-0103",
-    links: {
-      website: "https://example.com/luna", // TODO
-      booking: "https://squareup.com/appointments/book/yourlink", // TODO
-      instagram: "https://instagram.com/luna_nails", // TODO
-    },
-  },
-  {
-    id: "esthetics-mira",
-    name: "Mira Stone",
+    id: "esthetics-kaeli",
+    name: "Kaeli Tagland",
     role: "Esthetician",
     services: ["esthetics"],
-    photo:
-      "https://images.unsplash.com/photo-1522335789203-dc7f5f567f64?q=80&w=800&auto=format&fit=crop",
+    // UPDATE PHOTO: Kaeli headshot
+    photo: "https://picsum.photos/seed/kaeli-hs-2/800/600",
     blurb:
-      "Targeted facials, brows, and lash lifts with a skin-first approach.",
-    email: "mira@poshnewberg.com",
-    phone: "(503) 555-0104",
+      "Skin-first treatments, brows, and lash lifts. Explore services and book online.",
+    email: "info@simplyskinlaserllc.com", // public-facing inbox (placeholder)
+    phone: "(503) 555-0112", // placeholder
     links: {
-      website: "https://example.com/mira", // TODO
-      booking: "#contact",
+      website: "https://www.simplyskinlaserllc.com",
+      booking: "https://www.simplyskinlaserllc.com",
       instagram: "#",
     },
   },
   {
-    id: "tattoo-river",
-    name: "River Cole",
-    role: "Tattoo Artist",
-    services: ["tattoo"],
-    photo:
-      "https://images.unsplash.com/photo-1519415943484-9fa18778aa1d?q=80&w=800&auto=format&fit=crop",
-    blurb: "Custom linework and fine-detail pieces by appointment.",
-    email: "river@poshnewberg.com",
-    phone: "(503) 555-0105",
+    id: "inject-dottie",
+    name: "Dottie Massey",
+    role: "Nurse Injector • Wine Country Beauty & Wellness",
+    services: ["injectables"],
+    // UPDATE PHOTO: Dottie headshot
+    photo: "https://picsum.photos/seed/dottie-hs-4/800/600",
+    blurb:
+      "Botox and wellness services in a comfortable, client-first setting.",
+    email: "dottie@poshnewberg.com", // placeholder
+    phone: "(503) 710-7494",
     links: {
-      website: "https://example.com/river", // TODO
-      booking: "mailto:river@poshnewberg.com?subject=Tattoo%20Inquiry",
-      instagram: "https://instagram.com/river_inks", // TODO
+      website: "https://example.com/wcbw", // placeholder until she has one
+      booking: "#contact",
+      instagram: "#",
     },
   },
 ];
@@ -148,19 +133,16 @@ function renderArtists(filter = "all") {
           <p><a href="mailto:${a.email}">${
         a.email
       }</a><br><a href="tel:${sanitizePhone(a.phone)}">${a.phone}</a></p>
-          <div class="actions">
-            ${website}${booking}${insta}
-          </div>
+          <div class="actions">${website}${booking}${insta}</div>
         </div>
       </article>
     `;
     })
     .join("");
 
-  // Card tap behavior for mobile (toggle reveal)
+  // Tap-to-toggle for mobile (non-link area)
   artistGrid.querySelectorAll(".card").forEach((card) => {
     card.addEventListener("click", (e) => {
-      // Only toggle if clicking non-link area
       if (e.target.closest("a")) return;
       card.classList.toggle("show");
     });
@@ -170,9 +152,8 @@ function renderArtists(filter = "all") {
 function labelForService(key) {
   const map = {
     hair: "Hair",
-    nails: "Nails",
     esthetics: "Esthetics",
-    tattoo: "Tattoo",
+    injectables: "Injectables",
   };
   return map[key] ?? key;
 }
@@ -180,7 +161,7 @@ function sanitizePhone(raw) {
   return raw.replace(/[^\d+]/g, "");
 }
 
-/* Populate contact form artist dropdown to keep in sync with directory */
+/* Contact dropdown in sync with directory */
 function populateContactArtists() {
   if (!contactArtistSelect) return;
   const opts = ARTISTS.map(
@@ -189,7 +170,7 @@ function populateContactArtists() {
   contactArtistSelect.insertAdjacentHTML("beforeend", opts);
 }
 
-/* Service filter */
+/* Filter */
 serviceFilter?.addEventListener("change", (e) => renderArtists(e.target.value));
 
 /* Progress bar */
@@ -224,12 +205,12 @@ document.addEventListener("click", (e) => {
   }
 });
 
-/* Reduced motion check */
+/* Reduced motion */
 function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
-/* Lightweight client-side form validation + faux submit */
+/* Lightweight form handling (client only) */
 form?.addEventListener("submit", (e) => {
   e.preventDefault();
   const data = new FormData(form);
@@ -242,8 +223,8 @@ form?.addEventListener("submit", (e) => {
     return;
   }
 
-  // TODO: Wire to Netlify Forms or a serverless endpoint.
-  // Netlify example: add name="contact" hidden form-name input and action="/" method="POST"
+  // TODO: Netlify Forms — add:
+  // <input type="hidden" name="form-name" value="contact"> and set <form name="contact" method="POST" data-netlify="true">
   form.reset();
   setFormMsg("Thanks! Your message has been sent. We'll reply soon.", "ok");
 });
@@ -261,7 +242,7 @@ function setFormMsg(text, type = "ok") {
 /* Footer year */
 document.getElementById("year").textContent = new Date().getFullYear();
 
-/* Initial render */
+/* Init */
 renderArtists("all");
 populateContactArtists();
 updateProgress();
