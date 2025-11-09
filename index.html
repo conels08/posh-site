@@ -4,25 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>POSH — Innovative Artistry | Newberg, OR</title>
-  <meta name="description" content="POSH | Innovative Artistry—Hair, nails, and esthetics in Newberg, Oregon. Book with the owner or independent artists working at POSH." />
+  <meta name="description" content="POSH | Innovative Artistry — Hair, esthetics, and injectables in Newberg, Oregon. Book directly with our independent pros and shop Twig & Vine candles in-house." />
+
+  <!-- Styles -->
   <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" />
+
+  <!-- Favicon (optional) -->
+  <!-- UPDATE: add a favicon to /assets and point to it -->
+  <link rel="icon" href="assets/favicon.ico" />
+
   <meta name="theme-color" content="#b46b36" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="POSH — Innovative Artistry" />
-  <meta property="og:description" content="Hair • Nails • Esthetics. Book with our artists at POSH in Newberg, OR." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://picsum.photos/seed/posh-hero/1200/630" />
+  <meta property="og:description" content="Hair • Esthetics • Injectables. Book with our artists at POSH in Newberg, OR." />
+  <!-- UPDATE: Use your colorful logo for link shares -->
+  <meta property="og:image" content="assets/Posh_Colorful-1.png" />
 
-  <!-- LocalBusiness JSON-LD (update TODOs) -->
+  <!-- LocalBusiness JSON-LD (update address/email when you have them) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HairSalon",
     "name": "POSH — Innovative Artistry",
-    "image": "https://picsum.photos/seed/posh-hero/1200/630",
+    "image": "assets/Posh_Colorful-1.png",
     "url": "https://example.com",
     "telephone": "(503) 538-7056",
     "address": {
@@ -40,16 +46,14 @@
 </head>
 
 <body>
-  <!-- Progress bar -->
+  <!-- Scroll progress -->
   <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 
   <!-- Header / Nav -->
-  <header class="site-header">
+  <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="POSH Home">
-      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
-        <circle cx="32" cy="32" r="30" class="logo-ring"></circle>
-        <text x="50%" y="55%" text-anchor="middle" class="logo-text">P</text>
-      </svg>
+      <!-- UPDATE: Navbar logo (round). Put your file at /assets/Posh_sticker-logo-AddHair.png -->
+      <img class="logo-img" src="assets/Posh_sticker-logo-AddHair.png" alt="POSH Innovative Artistry logo" />
       <div class="brand-text">
         <span class="brand-name">POSH</span>
         <span class="brand-tag">Innovative Artistry</span>
@@ -72,15 +76,13 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero" id="top">
-    <picture>
-      <img src="https://picsum.photos/seed/posh-hero/1600/900"
-           alt="Modern salon interior with warm copper accents"
-           loading="eager" decoding="async" />
-    </picture>
+  <section class="hero">
+    <!-- UPDATE: Hero background photo (safe placeholder now) -->
+    <img class="hero-bg" src="https://picsum.photos/seed/posh-hero-3/1600/900" alt="Modern salon interior with warm copper accents" loading="eager" decoding="async" />
     <div class="hero-inner">
-      <h1>Elevate your look.</h1>
-      <p>Independent artists under one roof. Book directly with your pro at POSH.</p>
+      <!-- UPDATE: Colorful poster logo. Put file at /assets/Posh_Colorful-1.png -->
+      <img class="hero-logo" src="assets/Posh_Colorful-1.png" alt="POSH Innovative Artistry" />
+      <p class="hero-tag">Independent artists under one roof. Book directly with your pro at POSH.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#artists">Meet the Artists</a>
         <a class="btn btn-outline" href="#shop">Shop: Twig &amp; Vine</a>
@@ -95,13 +97,14 @@
       <p class="sub">Each professional manages their own bookings, pricing, and schedule.</p>
     </div>
 
+    <!-- Filter -->
     <div class="filter-row">
       <label class="sr-only" for="serviceFilter">Filter by service</label>
       <select id="serviceFilter">
         <option value="all">All services</option>
         <option value="hair">Hair</option>
-        <option value="nails">Nails</option>
         <option value="esthetics">Esthetics</option>
+        <option value="injectables">Injectables</option>
       </select>
     </div>
 
@@ -122,7 +125,8 @@
     <div class="grid">
       <article class="card" tabindex="0">
         <div class="media">
-          <img src="https://picsum.photos/seed/twigandvine/800/600" alt="Twig & Vine Candle Co. display" loading="lazy" decoding="async" />
+          <!-- UPDATE: Replace with real display shot of the Twig & Vine corner -->
+          <img src="https://picsum.photos/seed/twig-vine-3/800/600" alt="Twig & Vine Candle Co. display" loading="lazy" decoding="async" />
         </div>
         <div class="body">
           <h3>Twig &amp; Vine Candle Co.</h3>
@@ -132,6 +136,7 @@
         <div class="reveal" aria-hidden="true">
           <p>Small-batch, clean-burning candles showcased inside POSH. Perfect gifts and seasonal scents.</p>
           <p>
+            <!-- Debbie contact -->
             <a href="mailto:twigandvine25@gmail.com">twigandvine25@gmail.com</a><br>
             <a href="https://twigandvine.co" target="_blank" rel="noopener">twigandvine.co</a>
           </p>
@@ -163,14 +168,14 @@
         <span class="pill">Hair</span>
       </article>
       <article class="service">
-        <h3>Manicures &amp; Nail Art</h3>
-        <p>Gel, structured manicures, minimal nail art, and maintenance.</p>
-        <span class="pill">Nails</span>
-      </article>
-      <article class="service">
         <h3>Skin &amp; Lashes</h3>
         <p>Facials, brows, lashes, and targeted skin treatments.</p>
         <span class="pill">Esthetics</span>
+      </article>
+      <article class="service">
+        <h3>Injectables</h3>
+        <p>Botox and wellness services by a licensed nurse injector.</p>
+        <span class="pill">Injectables</span>
       </article>
     </div>
   </section>
@@ -183,12 +188,13 @@
     </div>
 
     <div class="gallery-grid">
-      <img src="https://picsum.photos/seed/posh-a/800/600" alt="Salon workstation" loading="lazy" />
-      <img src="https://picsum.photos/seed/posh-b/800/600" alt="Hair color process" loading="lazy" />
-      <img src="https://picsum.photos/seed/posh-c/800/600" alt="Nail studio detail" loading="lazy" />
-      <img src="https://picsum.photos/seed/posh-d/800/600" alt="Esthetics products" loading="lazy" />
-      <img src="https://picsum.photos/seed/posh-e/800/600" alt="Salon lounge" loading="lazy" />
-      <img src="https://picsum.photos/seed/posh-f/800/600" alt="Reception area" loading="lazy" />
+      <!-- UPDATE: swap these with real salon/work images -->
+      <img src="https://picsum.photos/seed/posh-ga/800/600" alt="Salon workstation" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-gb/800/600" alt="Hair color process" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-gc/800/600" alt="Skin care products" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-gd/800/600" alt="Injectables consultation room" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-ge/800/600" alt="Salon lounge" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-gf/800/600" alt="Front desk" loading="lazy" />
     </div>
   </section>
 
@@ -223,7 +229,7 @@
         </div>
         <div class="form-row">
           <label for="message">How can we help?</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about your hair goals, skin care needs, or room rental question…" required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your hair goals, skin care needs, or injectables question…" required></textarea>
         </div>
         <button class="btn btn-primary" type="submit">Send</button>
         <p id="formMsg" role="status" aria-live="polite"></p>
@@ -234,17 +240,20 @@
           <h3>POSH — Innovative Artistry</h3>
           <p>123 E Main St, Suite 200<br/>Newberg, OR 97132</p>
           <p>
+            <!-- UPDATE: main phone/email -->
             <a href="tel:+15035387056">(503) 538-7056</a><br/>
-            <a href="mailto:hello@poshnewberg.com">hello@poshnewberg.com</a> <!-- TODO: replace -->
+            <a href="mailto:hello@poshnewberg.com">hello@poshnewberg.com</a>
           </p>
           <p><strong>Hours</strong><br/>Tue–Fri 10am–6pm • Sat by appt</p>
           <div class="socials">
-            <a href="#" aria-label="Instagram (placeholder)">Instagram</a>
-            <a href="#" aria-label="Facebook (placeholder)">Facebook</a>
+            <!-- UPDATE: link real accounts -->
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
           </div>
         </div>
 
         <div class="map">
+          <!-- UPDATE: Replace with exact map embed once address is final -->
           <iframe
             title="POSH location map"
             loading="lazy"
