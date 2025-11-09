@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>POSH — Innovative Artistry | Newberg, OR</title>
-  <meta name="description" content="POSH | Innovative Artistry — Hair, nails, esthetics, and tattoo artistry in Newberg, Oregon. Book with the owner or independent artists working at POSH." />
+  <meta name="description" content="POSH | Innovative Artistry—Hair, nails, and esthetics in Newberg, Oregon. Book with the owner or independent artists working at POSH." />
   <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.ico" />
@@ -12,19 +12,19 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="POSH — Innovative Artistry" />
-  <meta property="og:description" content="Hair • Nails • Esthetics • Tattoo. Book with our artists at POSH in Newberg, OR." />
+  <meta property="og:description" content="Hair • Nails • Esthetics. Book with our artists at POSH in Newberg, OR." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1517833969405-d4a24c2c4b8f?q=80&w=1200&auto=format&fit=crop" />
+  <meta property="og:image" content="https://picsum.photos/seed/posh-hero/1200/630" />
 
-  <!-- LocalBusiness JSON-LD (update placeholders when you have them) -->
+  <!-- LocalBusiness JSON-LD (update TODOs) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HairSalon",
     "name": "POSH — Innovative Artistry",
-    "image": "https://images.unsplash.com/photo-1517833969405-d4a24c2c4b8f?q=80&w=1200&auto=format&fit=crop",
-    "url": "https://example.com", 
-    "telephone": "(503) 555-0123",                         
+    "image": "https://picsum.photos/seed/posh-hero/1200/630",
+    "url": "https://example.com",
+    "telephone": "(503) 538-7056",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123 E Main St Suite 200",
@@ -46,7 +46,6 @@
   <!-- Header / Nav -->
   <header class="site-header">
     <a class="brand" href="#top" aria-label="POSH Home">
-      <!-- Simple monogram logo (inline SVG) -->
       <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
         <circle cx="32" cy="32" r="30" class="logo-ring"></circle>
         <text x="50%" y="55%" text-anchor="middle" class="logo-text">P</text>
@@ -64,6 +63,7 @@
 
     <nav id="siteNav" class="nav">
       <a href="#artists">Artists</a>
+      <a href="#shop">Shop</a>
       <a href="#services">Services</a>
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
@@ -74,9 +74,8 @@
   <!-- Hero -->
   <section class="hero" id="top">
     <picture>
-      <!-- Large hero image; swap when you have a real photo -->
-      <img src="https://images.unsplash.com/photo-1517833969405-d4a24c2c4b8f?q=80&w=1600&auto=format&fit=crop"
-           alt="Warm, modern salon interior with copper accents"
+      <img src="https://picsum.photos/seed/posh-hero/1600/900"
+           alt="Modern salon interior with warm copper accents"
            loading="eager" decoding="async" />
     </picture>
     <div class="hero-inner">
@@ -84,19 +83,18 @@
       <p>Independent artists under one roof. Book directly with your pro at POSH.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#artists">Meet the Artists</a>
-        <a class="btn btn-outline" href="#contact">Book with POSH</a>
+        <a class="btn btn-outline" href="#shop">Shop: Twig &amp; Vine</a>
       </div>
     </div>
   </section>
 
-  <!-- Artists (owner + tenants) -->
+  <!-- Artists -->
   <section class="section" id="artists" aria-labelledby="artists-heading">
     <div class="section-head">
       <h2 id="artists-heading">Artists at POSH</h2>
       <p class="sub">Each professional manages their own bookings, pricing, and schedule.</p>
     </div>
 
-    <!-- Optional quick filter (data-driven by script.js) -->
     <div class="filter-row">
       <label class="sr-only" for="serviceFilter">Filter by service</label>
       <select id="serviceFilter">
@@ -104,22 +102,50 @@
         <option value="hair">Hair</option>
         <option value="nails">Nails</option>
         <option value="esthetics">Esthetics</option>
-        <option value="tattoo">Tattoo</option>
       </select>
     </div>
 
     <div id="artistGrid" class="grid">
-      <!-- Cards injected by script.js for easy edits -->
-      <noscript>
-        <p>Please enable JavaScript to view artist cards.</p>
-      </noscript>
+      <noscript><p>Please enable JavaScript to view artist cards.</p></noscript>
     </div>
 
     <p class="note">Are you an independent artist interested in renting a room? <a href="#contact">Contact us</a>.</p>
   </section>
 
-  <!-- Services (general overview with placeholders) -->
-  <section class="section alt" id="services" aria-labelledby="services-heading">
+  <!-- Shop at POSH: Twig & Vine -->
+  <section class="section alt" id="shop" aria-labelledby="shop-heading">
+    <div class="section-head">
+      <h2 id="shop-heading">Shop at POSH</h2>
+      <p class="sub">Discover artisan goods available in-house.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card" tabindex="0">
+        <div class="media">
+          <img src="https://picsum.photos/seed/twigandvine/800/600" alt="Twig & Vine Candle Co. display" loading="lazy" decoding="async" />
+        </div>
+        <div class="body">
+          <h3>Twig &amp; Vine Candle Co.</h3>
+          <div class="role">Artisan Soy Candles by Debbie Nagel</div>
+          <div class="tags"><span class="tag">Local</span><span class="tag">Hand-poured</span></div>
+        </div>
+        <div class="reveal" aria-hidden="true">
+          <p>Small-batch, clean-burning candles showcased inside POSH. Perfect gifts and seasonal scents.</p>
+          <p>
+            <a href="mailto:twigandvine25@gmail.com">twigandvine25@gmail.com</a><br>
+            <a href="https://twigandvine.co" target="_blank" rel="noopener">twigandvine.co</a>
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://twigandvine.co" target="_blank" rel="noopener">Visit Website</a>
+            <a class="btn btn-outline" href="#contact">Contact POSH</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services" aria-labelledby="services-heading">
     <div class="section-head">
       <h2 id="services-heading">Services</h2>
       <p class="sub">Offerings vary by artist; see each profile for details &amp; pricing.</p>
@@ -133,12 +159,12 @@
       </article>
       <article class="service">
         <h3>Color &amp; Blonding</h3>
-        <p>Highlights, balayage, vivid color, toners, and corrective work.</p>
+        <p>Highlights, balayage, lived-in color, toners, and corrections.</p>
         <span class="pill">Hair</span>
       </article>
       <article class="service">
         <h3>Manicures &amp; Nail Art</h3>
-        <p>Gel, structured manicures, nail art, and maintenance.</p>
+        <p>Gel, structured manicures, minimal nail art, and maintenance.</p>
         <span class="pill">Nails</span>
       </article>
       <article class="service">
@@ -146,15 +172,10 @@
         <p>Facials, brows, lashes, and targeted skin treatments.</p>
         <span class="pill">Esthetics</span>
       </article>
-      <article class="service">
-        <h3>Body Art</h3>
-        <p>Custom tattoos by appointment with safety-first standards.</p>
-        <span class="pill">Tattoo</span>
-      </article>
     </div>
   </section>
 
-  <!-- Gallery (placeholder images; replace with your own) -->
+  <!-- Gallery -->
   <section class="section" id="gallery" aria-labelledby="gallery-heading">
     <div class="section-head">
       <h2 id="gallery-heading">Studio &amp; Work</h2>
@@ -162,12 +183,12 @@
     </div>
 
     <div class="gallery-grid">
-      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" alt="Salon workstation" loading="lazy" />
-      <img src="https://images.unsplash.com/photo-1519669011783-4eaa95fa2e36?q=80&w=800&auto=format&fit=crop" alt="Hair color process" loading="lazy" />
-      <img src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=800&auto=format&fit=crop" alt="Nail studio detail" loading="lazy" />
-      <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=800&auto=format&fit=crop" alt="Esthetics products" loading="lazy" />
-      <img src="https://images.unsplash.com/photo-1570132089649-4eab65edc388?q=80&w=800&auto=format&fit=crop" alt="Tattoo workstation" loading="lazy" />
-      <img src="https://images.unsplash.com/photo-1495465798138-718f86fcf216?q=80&w=800&auto=format&fit=crop" alt="Salon lounge" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-a/800/600" alt="Salon workstation" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-b/800/600" alt="Hair color process" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-c/800/600" alt="Nail studio detail" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-d/800/600" alt="Esthetics products" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-e/800/600" alt="Salon lounge" loading="lazy" />
+      <img src="https://picsum.photos/seed/posh-f/800/600" alt="Reception area" loading="lazy" />
     </div>
   </section>
 
@@ -180,7 +201,7 @@
 
     <div class="contact-wrap">
       <form id="contactForm" class="contact-form" novalidate>
-        <!-- When you wire this up, post to Netlify Forms or a serverless function -->
+        <!-- TODO: Wire to Netlify Forms or serverless -->
         <div class="form-row">
           <label for="name">Full name</label>
           <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required />
@@ -197,12 +218,12 @@
           <label for="artist">Message for</label>
           <select id="artist" name="artist">
             <option value="posh">POSH (front desk)</option>
-            <!-- The script injects artist options dynamically to keep this in sync -->
+            <!-- script.js injects artist options -->
           </select>
         </div>
         <div class="form-row">
           <label for="message">How can we help?</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about your hair goals, nail inspo, or room rental question…" required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your hair goals, skin care needs, or room rental question…" required></textarea>
         </div>
         <button class="btn btn-primary" type="submit">Send</button>
         <p id="formMsg" role="status" aria-live="polite"></p>
@@ -212,18 +233,18 @@
         <div class="card">
           <h3>POSH — Innovative Artistry</h3>
           <p>123 E Main St, Suite 200<br/>Newberg, OR 97132</p>
-          <p><a href="tel:+15035550123">(503) 555-0123</a><br/>
-             <a href="mailto:hello@poshnewberg.com">hello@poshnewberg.com</a></p>
+          <p>
+            <a href="tel:+15035387056">(503) 538-7056</a><br/>
+            <a href="mailto:hello@poshnewberg.com">hello@poshnewberg.com</a> <!-- TODO: replace -->
+          </p>
           <p><strong>Hours</strong><br/>Tue–Fri 10am–6pm • Sat by appt</p>
           <div class="socials">
             <a href="#" aria-label="Instagram (placeholder)">Instagram</a>
             <a href="#" aria-label="Facebook (placeholder)">Facebook</a>
-            <a href="#" aria-label="TikTok (placeholder)">TikTok</a>
           </div>
         </div>
 
         <div class="map">
-          <!-- Replace src once you have your exact map link -->
           <iframe
             title="POSH location map"
             loading="lazy"
