@@ -16,7 +16,7 @@ const ARTISTS = [
     role: "Owner • Beautician",
     services: ["hair"],
     // UPDATE PHOTO: Owner headshot
-    photo: "https://picsum.photos/seed/cyndie-hs-2/800/600",
+    photo: "assets/CyndiePhillips.jpg",
     blurb:
       "Experienced beautician specializing in precision cuts, classic color, and healthy hair.",
     email: "cyndie@poshnewberg.com", // TODO: update when ready
@@ -33,7 +33,7 @@ const ARTISTS = [
     role: "Stylist",
     services: ["hair"],
     // UPDATE PHOTO: Riley headshot
-    photo: "https://picsum.photos/seed/riley-hs-3/800/600",
+    photo: "assets/Riley-profile-img.jpg",
     blurb: "Cut, color, and styles tailored to your vibe. Book online.",
     email: "riley@poshnewberg.com", // placeholder
     phone: "(503) 555-0111", // placeholder
@@ -49,7 +49,7 @@ const ARTISTS = [
     role: "Esthetician",
     services: ["esthetics"],
     // UPDATE PHOTO: Kaeli headshot
-    photo: "https://picsum.photos/seed/kaeli-hs-2/800/600",
+    photo: "assets/Kaeli-profile-img.jpeg",
     blurb:
       "Skin-first treatments, brows, and lash lifts. Explore services and book online.",
     email: "info@simplyskinlaserllc.com", // public-facing inbox (placeholder)
@@ -66,7 +66,7 @@ const ARTISTS = [
     role: "Nurse Injector • Wine Country Beauty & Wellness",
     services: ["injectables"],
     // UPDATE PHOTO: Dottie headshot
-    photo: "https://picsum.photos/seed/dottie-hs-4/800/600",
+    photo: "assets/Dottie-profile-img.jpg",
     blurb:
       "Botox and wellness services in a comfortable, client-first setting.",
     email: "dottie@poshnewberg.com", // placeholder
