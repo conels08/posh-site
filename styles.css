@@ -93,7 +93,8 @@ a:not(.btn):not(.brand):not(.nav a){
 }
 a:not(.btn):not(.brand):not(.nav a):hover,
 a:not(.btn):not(.brand):not(.nav a):focus-visible{
-  color: var(--link-hover);
+  color: color-mix(in oklab, var(--brand) 80%, white 10%);
+  text-decoration-thickness: 2px;
 }
 a:not(.btn):not(.brand):not(.nav a):visited{
   color: var(--link-visited);
