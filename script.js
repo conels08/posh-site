@@ -13,12 +13,12 @@ const ARTISTS = [
   {
     id: "owner-cyndie",
     name: "Cyndie Phillips",
-    role: "Owner • Beautician",
+    role: "Owner • Stylist",
     services: ["hair"],
     // UPDATE PHOTO: Owner headshot
     photo: "assets/CyndiePhillips.jpg",
     blurb:
-      "Experienced beautician specializing in precision cuts, classic color, and healthy hair.",
+      "Experienced stylist specializing in precision cuts, classic color, and healthy hair.",
     email: "cyndie@poshnewberg.com", // TODO: update when ready
     phone: "(503) 538-7056",
     links: {
@@ -45,10 +45,9 @@ const ARTISTS = [
   },
   {
     id: "esthetics-kaeli",
-    name: "Kaeli Tagland",
-    role: "Esthetician",
+    name: "Kaeli Tegland",
+    role: "Advanced Aesthetician",
     services: ["esthetics"],
-    // UPDATE PHOTO: Kaeli headshot
     photo: "assets/Kaeli-profile-img.jpeg",
     blurb:
       "Skin-first treatments, brows, and lash lifts. Explore services and book online.",
@@ -56,7 +55,8 @@ const ARTISTS = [
     phone: "(503) 555-0112", // placeholder
     links: {
       website: "https://www.simplyskinlaserllc.com",
-      booking: "https://www.simplyskinlaserllc.com",
+      booking:
+        "https://book.squareup.com/appointments/lbgth1486i8nxh/location/LHG8GB536NJCW/services?buttonTextColor=ffffff&color=000000&locale=en&referrer=so",
       instagram: "#",
     },
   },
