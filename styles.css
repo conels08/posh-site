@@ -220,15 +220,17 @@ a:not(.btn):not(.brand):not(.nav a):visited{
   transition: transform .35s ease; border-top:1px solid rgba(255,255,255,.08);
 }
 .card:focus-within .reveal, .card:hover .reveal, .card.show .reveal{ transform:translateY(0); }
-.reveal a{
+/* Links inside the reveal panel, but NOT buttons */
+.reveal a:not(.btn){
   color: var(--link);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-.reveal a:hover,
-.reveal a:focus-visible{
+.reveal a:not(.btn):hover,
+.reveal a:not(.btn):focus-visible{
   color: var(--link-hover);
 }
+
 
 /* Long strings won’t force the card wider than the viewport */
 .reveal, .reveal p, .reveal a,
