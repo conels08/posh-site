@@ -135,13 +135,67 @@ a:not(.btn):not(.brand):not(.nav a):visited{
 .burger::before,.burger::after,.burger div{ content:""; position:absolute; left:0; width:100%; height:2px; background:var(--text); }
 .burger::before{ top:0; } .burger::after{ bottom:0; } .burger div{ top:8px; }
 
-/* Buttons */
-.btn{ display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
-  padding:.6rem 1rem; border-radius:999px; border:1px solid rgba(255,255,255,.12);
-  text-decoration:none; color:var(--text); cursor:pointer; box-shadow:var(--shadow);
+/* Buttons (accessible, high-contrast, polished) */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  padding:.6rem 1rem;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  text-decoration:none;
+  cursor:pointer;
+  box-shadow:var(--shadow);
+  line-height:1;
+  transition: background-color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .06s ease;
+  /* Ensure button text never gets overridden by link rules */
+  color:#fff;
 }
-.btn-primary{ background: linear-gradient(135deg, var(--brand), color-mix(in oklab, var(--brand) 70%, #fff 10%)); border-color:transparent; }
-.btn-outline{ background:transparent; border-color:rgba(255,255,255,.2); }
+
+/* Primary: copper gradient, forced white text for contrast */
+.btn-primary{
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--brand) 94%, black 6%),
+    color-mix(in oklab, var(--brand) 70%, white 10%)
+  );
+  border-color: transparent;
+  color:#fff; /* force high contrast */
+}
+.btn-primary:hover{
+  filter: brightness(1.06);
+  box-shadow: 0 0 0 2px rgba(255,255,255,.08), var(--shadow);
+}
+.btn-primary:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(180,107,54,.35), var(--shadow);
+}
+.btn-primary:active{
+  transform: translateY(1px);
+}
+
+/* Outline: subtle by default, readable hover/focus */
+.btn-outline{
+  background: transparent;
+  border-color: rgba(255,255,255,.28);
+  color: var(--text);
+}
+.btn-outline:hover{
+  background: color-mix(in oklab, var(--surface-2) 88%, transparent);
+  border-color: rgba(255,255,255,.42);
+  box-shadow: 0 0 0 2px rgba(255,255,255,.06), var(--shadow);
+}
+.btn-outline:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--brand-2) 45%, white 10%), var(--shadow);
+}
+.btn-outline:active{
+  transform: translateY(1px);
+}
+
+/* Make sure nav buttons and reveal buttons inherit the same polish */
+.nav .btn,
+.reveal .actions .btn{
+  white-space: nowrap;
+}
 
 /* Hero */
 .hero{ position:relative; min-height:60vh; display:grid; place-items:center; overflow:hidden; }
