@@ -163,7 +163,7 @@ function renderArtists(filter = "all") {
 function labelForService(key) {
   const map = {
     hair: "Hair",
-    esthetics: "Esthetics",
+    esthetics: "Aesthetics",
     injectables: "Injectables",
   };
   return map[key] ?? key;
