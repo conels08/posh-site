@@ -19,7 +19,7 @@ const ARTISTS = [
     photo: "assets/CyndiePhillips.jpg",
     blurb:
       "Experienced stylist specializing in precision cuts, classic color, and healthy hair.",
-    email: "cyndie@poshnewberg.com", // TODO: update when ready
+    email: "firststreetposh@gmail.com", // TODO: update when ready
     phone: "(503) 538-7056",
     links: {
       website: null, // e.g. "https://poshnewberg.com/cyndie"
@@ -35,7 +35,7 @@ const ARTISTS = [
     // UPDATE PHOTO: Riley headshot
     photo: "assets/Riley-profile-img.jpg",
     blurb: "Cut, color, and styles tailored to your vibe. Book online.",
-    email: "riley@poshnewberg.com", // placeholder
+    email: null, // placeholder
     phone: "(503) 915-5328", // placeholder
     links: {
       website: "https://hairbyrileyyy.glossgenius.com",
@@ -66,10 +66,10 @@ const ARTISTS = [
     role: "Nurse Injector • Wine Country Beauty & Wellness",
     services: ["injectables"],
     // UPDATE PHOTO: Dottie headshot
-    photo: "assets/Dottie-profile-img.jpg",
+    photo: "assets/Dottie-image-profile-temp.jpeg",
     blurb:
       "Botox and wellness services in a comfortable, client-first setting.",
-    email: "assets/Dottie-image-profile-temp.jpeg", // placeholder
+    email: "dottie@poshnewberg.com", // placeholder
     phone: "(503) 710-7494",
     links: {
       website: "https://example.com/wcbw", // placeholder until she has one
