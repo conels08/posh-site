@@ -69,7 +69,7 @@ const ARTISTS = [
     photo: "assets/Dottie-profile-img.jpg",
     blurb:
       "Botox and wellness services in a comfortable, client-first setting.",
-    email: "dottie@poshnewberg.com", // placeholder
+    email: "assets/Dottie-image-profile-temp.jpeg", // placeholder
     phone: "(503) 710-7494",
     links: {
       website: "https://example.com/wcbw", // placeholder until she has one
