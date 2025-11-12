@@ -36,11 +36,11 @@ const ARTISTS = [
     photo: "assets/Riley-profile-img.jpg",
     blurb: "Cut, color, and styles tailored to your vibe. Book online.",
     email: "riley@poshnewberg.com", // placeholder
-    phone: "(503) 555-0111", // placeholder
+    phone: "(503) 915-5328", // placeholder
     links: {
       website: "https://hairbyrileyyy.glossgenius.com",
       booking: "https://hairbyrileyyy.glossgenius.com",
-      instagram: "#",
+      instagram: "https://www.instagram.com/hair.by.rileyyy/",
     },
   },
   {
