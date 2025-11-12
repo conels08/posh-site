@@ -46,18 +46,18 @@ const ARTISTS = [
   {
     id: "esthetics-kaeli",
     name: "Kaeli Tegland",
-    role: "Advanced Aesthetician",
+    role: "Certified Advanced Esthetician",
     services: ["esthetics"],
     photo: "assets/Kaeli-profile-img.jpeg",
     blurb:
       "Skin-first treatments, brows, and lash lifts. Explore services and book online.",
     email: "info@simplyskinlaserllc.com", // public-facing inbox (placeholder)
-    phone: "(503) 555-0112", // placeholder
+    phone: "(971) 281-9373",
     links: {
       website: "https://www.simplyskinlaserllc.com",
       booking:
         "https://book.squareup.com/appointments/lbgth1486i8nxh/location/LHG8GB536NJCW/services?buttonTextColor=ffffff&color=000000&locale=en&referrer=so",
-      instagram: "#",
+      instagram: "https://www.instagram.com/simplyskinlaserllc/",
     },
   },
   {
