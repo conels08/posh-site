@@ -66,7 +66,7 @@ const ARTISTS = [
     role: "Nurse Injector • Wine Country Beauty & Wellness",
     services: ["injectables"],
     // UPDATE PHOTO: Dottie headshot
-    photo: "assets/Dottie-image-profile-temp.jpeg",
+    photo: "assets/Dottie_profile_main.JPG",
     blurb:
       "Botox and wellness services in a comfortable, client-first setting.",
     email: "dottie@poshnewberg.com", // placeholder
