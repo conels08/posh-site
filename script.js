@@ -221,23 +221,22 @@ function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
-/* Lightweight form handling (client only) */
+/* Netlify-friendly form handling */
 form?.addEventListener("submit", (e) => {
-  e.preventDefault();
   const data = new FormData(form);
   const name = String(data.get("name") || "").trim();
   const email = String(data.get("email") || "").trim();
   const message = String(data.get("message") || "").trim();
 
+  // Only block submission if required fields are empty
   if (!name || !email || !message) {
+    e.preventDefault();
     setFormMsg("Please fill in name, email, and your message.", "error");
     return;
   }
 
-  // TODO: Netlify Forms — add:
-  // <input type="hidden" name="form-name" value="contact"> and set <form name="contact" method="POST" data-netlify="true">
-  form.reset();
-  setFormMsg("Thanks! Your message has been sent. We'll reply soon.", "ok");
+  // Allow Netlify to receive the form normally
+  setFormMsg("Sending…", "ok");
 });
 
 function setFormMsg(text, type = "ok") {
