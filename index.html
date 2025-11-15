@@ -207,6 +207,10 @@
 
     <div class="contact-wrap">
       <form id="contactForm" name="contact" method="POST" netlify class="contact-form" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+        </p>
 
         <!-- TODO: Wire to Netlify Forms or serverless -->
         <div class="form-row">

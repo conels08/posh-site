@@ -349,6 +349,12 @@ input:focus, select:focus, textarea:focus{ border-color: color-mix(in oklab, var
 .footer{ padding:2rem 1rem; text-align:center; color:var(--muted); border-top:1px solid rgba(255,255,255,.06); margin-top:2rem; }
 .footer .tiny{ font-size:.85rem; }
 
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+
 /* Layout—wider screens */
 @media (min-width: 880px){
   .nav-toggle{ display:none; }
