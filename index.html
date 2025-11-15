@@ -206,7 +206,8 @@
     </div>
 
     <div class="contact-wrap">
-      <form id="contactForm" class="contact-form" novalidate>
+      <form id="contactForm" name="contact" method="POST" netlify class="contact-form" netlify-honeypot="bot-field">
+
         <!-- TODO: Wire to Netlify Forms or serverless -->
         <div class="form-row">
           <label for="name">Full name</label>
