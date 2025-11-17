@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/Posh_sticker-logo-AddHair.png" width="200" alt="POSH Logo" />
+  <img src="https://github.com/conels08/posh-site/blob/main/assets/Posh_sticker-logo-AddHair.png?raw=true" width="200" alt="POSH Logo" />
 </p>
 
 📁 POSH Salon & Spa — Official Website
