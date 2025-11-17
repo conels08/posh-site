@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/Posh_Colorful-1.png" width="200" alt="POSH Logo" />
+</p>
+
 📁 POSH Salon & Spa — Official Website
 
 Modern, responsive, client-ready website built for a real business in Newberg, Oregon.
