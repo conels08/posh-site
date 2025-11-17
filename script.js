@@ -124,6 +124,14 @@ function renderArtists(filter = "all") {
       const insta = a.links.instagram
         ? `<a class="btn btn-outline" href="${a.links.instagram}" target="_blank" rel="noopener">Instagram</a>`
         : "";
+      const contactHtml = `
+        ${a.email ? `<a href="mailto:${a.email}">${a.email}</a><br>` : ""}
+        ${
+          a.phone
+            ? `<a href="tel:${sanitizePhone(a.phone)}">${a.phone}</a>`
+            : ""
+        }
+      `;
 
       return `
       <article class="card" data-services="${a.services.join(
@@ -141,9 +149,7 @@ function renderArtists(filter = "all") {
         </div>
         <div class="reveal" aria-hidden="true">
           <p>${a.blurb}</p>
-          <p><a href="mailto:${a.email}">${
-        a.email
-      }</a><br><a href="tel:${sanitizePhone(a.phone)}">${a.phone}</a></p>
+          <p>${contactHtml}</p>
           <div class="actions">${website}${booking}${insta}</div>
         </div>
       </article>
