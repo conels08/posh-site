@@ -113,9 +113,6 @@ function renderArtists(filter = "all") {
       const tags = a.services
         .map((s) => `<span class="tag">${labelForService(s)}</span>`)
         .join("");
-
-      enforceSingleResultLayout();
-
       const website = a.links.website
         ? `<a class="btn btn-outline" href="${a.links.website}" target="_blank" rel="noopener">Website</a>`
         : "";
@@ -159,6 +156,8 @@ function renderArtists(filter = "all") {
     `;
     })
     .join("");
+
+  enforceSingleResultLayout();
 
   // Tap-to-toggle for mobile (non-link area)
   artistGrid.querySelectorAll(".card").forEach((card) => {
