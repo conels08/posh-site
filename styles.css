@@ -322,13 +322,24 @@ input:focus, select:focus, textarea:focus{ border-color: color-mix(in oklab, var
 .contact-info .card{ padding:1rem; }
 .socials{ display:flex; gap:.6rem; flex-wrap:wrap; }
 .socials a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 1px solid rgba(255,255,255,.15);
   color: var(--link);
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  font-size: 1.1rem;
+  transition: all .20s ease;
 }
 .socials a:hover,
 .socials a:focus-visible{
-  color: var(--link-hover);
+  color: #fff;
+  background: color-mix(in oklab, var(--brand) 60%, black 20%);
+  border-color: rgba(255,255,255,.35);
+  box-shadow: 0 0 0 3px rgba(180,107,54,.20);
 }
 
 /* Prevent the Google Maps iframe from causing horizontal scroll */
