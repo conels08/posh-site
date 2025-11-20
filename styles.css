@@ -359,6 +359,11 @@ input:focus, select:focus, textarea:focus{ border-color: color-mix(in oklab, var
 @media (min-width: 880px){
   .nav-toggle{ display:none; }
   .contact-wrap{ grid-template-columns: 1.1fr .9fr; align-items:start; }
+
+  #artistGrid.single-result .card {
+    max-width: 420px;
+    margin-inline: auto;
+  }
 }
 
 /* Small screens: mobile nav */
