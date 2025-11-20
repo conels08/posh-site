@@ -360,6 +360,7 @@ input:focus, select:focus, textarea:focus{ border-color: color-mix(in oklab, var
   .nav-toggle{ display:none; }
   .contact-wrap{ grid-template-columns: 1.1fr .9fr; align-items:start; }
 
+  /* Limit card width when only one artist is visible (desktop only) */
   #artistGrid.single-result .card {
     max-width: 420px;
     margin-inline: auto;

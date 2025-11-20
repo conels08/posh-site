@@ -113,6 +113,9 @@ function renderArtists(filter = "all") {
       const tags = a.services
         .map((s) => `<span class="tag">${labelForService(s)}</span>`)
         .join("");
+
+      enforceSingleResultLayout();
+
       const website = a.links.website
         ? `<a class="btn btn-outline" href="${a.links.website}" target="_blank" rel="noopener">Website</a>`
         : "";
@@ -164,6 +167,16 @@ function renderArtists(filter = "all") {
       card.classList.toggle("show");
     });
   });
+}
+
+function enforceSingleResultLayout() {
+  if (!artistGrid) return;
+  const visibleCards = artistGrid.querySelectorAll(".card");
+  if (visibleCards.length === 1) {
+    artistGrid.classList.add("single-result");
+  } else {
+    artistGrid.classList.remove("single-result");
+  }
 }
 
 function labelForService(key) {
