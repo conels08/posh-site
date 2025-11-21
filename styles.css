@@ -320,7 +320,12 @@ input:focus, select:focus, textarea:focus{ border-color: color-mix(in oklab, var
 
 .contact-info{ display:grid; gap:1rem; }
 .contact-info .card{ padding:1rem; }
+
+/* Socials - instagram & facebook icons */
 .socials{ display:flex; gap:.6rem; flex-wrap:wrap; }
+.socials a i {
+  font-size: 1.2rem;
+}
 .socials a{
   display: inline-flex;
   align-items: center;

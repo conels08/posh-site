@@ -122,8 +122,12 @@ function renderArtists(filter = "all") {
           }" rel="noopener">Book</a>`
         : "";
       const insta = a.links.instagram
-        ? `<a class="btn btn-outline" href="${a.links.instagram}" target="_blank" rel="noopener">Instagram</a>`
+        ? `<a class="btn btn-outline" href="${a.links.instagram}" target="_blank" rel="noopener" aria-label="${a.name} on Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span>Instagram</span>
+          </a>`
         : "";
+
       const contactHtml = `
         ${a.email ? `<a href="mailto:${a.email}">${a.email}</a><br>` : ""}
         ${
