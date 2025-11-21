@@ -24,7 +24,7 @@ const ARTISTS = [
     links: {
       website: null, // e.g. "https://poshnewberg.com/cyndie"
       booking: "#contact",
-      instagram: "#",
+      instagram: null,
     },
   },
   {
