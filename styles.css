@@ -217,6 +217,61 @@ a:not(.btn):not(.brand):not(.nav a):visited{
               linear-gradient(to top, rgba(14,16,19,.85), rgba(14,16,19,.35));
 }
 .hero-inner{ position:relative; z-index:1; text-align:center; padding:3rem 1rem; max-width:860px; }
+.hero-title {
+  max-width: 720px;
+  margin: 0 auto 1.4rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  opacity: 0;
+  transform: translateY(14px);
+  animation: heroTitleFade 0.8s ease-out 0.1s forwards;
+}
+
+.hero-title-line {
+  display: inline-block;
+  font-size: clamp(1.7rem, 2.2vw + 1rem, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--text) 94%, var(--brand) 6%);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+  position: relative;
+}
+
+.hero-title-line::after {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 2px;
+  margin: 0.75rem auto 0;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in oklab, var(--brand) 85%, black 10%),
+    color-mix(in oklab, var(--brand-2) 80%, white 10%)
+  );
+}
+
+.hero-title-subline {
+  font-size: clamp(0.95rem, 0.7vw + 0.9rem, 1.1rem);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: color-mix(in oklab, var(--muted) 80%, white 20%);
+}
+
+/* Subtle entrance */
+@keyframes heroTitleFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .hero-logo{ width:min(520px, 85vw); height:auto; display:block; margin:0 auto .8rem; }
 .hero-tag{ color:var(--muted); margin:.2rem 0 1.2rem; }
 .hero-ctas{ display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap; }
