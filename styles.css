@@ -20,7 +20,10 @@
   --header-h: 64px;
 }
 
-*{ box-sizing: border-box; }
+*{ 
+  min-width: 0;
+  box-sizing: border-box; 
+}
 html, body{ 
   height:100%; 
   max-width: 100%;
@@ -72,9 +75,6 @@ main, header, footer, .hero, .section, .grid, .services-grid, .gallery-grid, .co
   min-width: 0;       /* allow grid/flex children to shrink */
   overflow-x: clip;   /* no sideways scroll from wide children */
 }
-
-
-* { min-width: 0; }
 
 /* Clean anchor offset for fixed header */
 html{ scroll-padding-top: calc(var(--header-h) + 8px); }
