@@ -3,41 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>POSH — Hair, Esthetics & Injectables in Newberg, Oregon</title>
-  <meta name="description" content="POSH offers hair styling, esthetics, injectables, and artisan goods in Newberg, Oregon. Book directly with our independent artists or shop Twig & Vine candles in-house." />
+
+  <meta name="description"
+    content="POSH offers hair styling, esthetics, injectables, and artisan goods in Newberg, Oregon. Book directly with our independent artists or shop Twig & Vine candles in-house." />
+
   <!-- Styles -->
   <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Fontawesome (icons) -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Favicon (optional) -->
-  <!-- UPDATE: add a favicon to /assets and point to it -->
-  <link rel="icon" href="assets/favicon.ico" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/Posh_sticker-logo-AddHair.png" />
 
+  <!-- Theme color -->
   <meta name="theme-color" content="#b46b36" />
 
-  <!-- Canonical URL (for google ranking) -->
+  <!-- Canonical URL -->
   <link rel="canonical" href="https://poshnewberg.com" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="POSH — Hair, Esthetics & Injectables in Newberg, Oregon" />
+  <!-- Open Graph (Facebook / general link previews) -->
+  <meta property="og:title" content="POSH — Hair, Esthetics &amp; Injectables in Newberg, Oregon" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://poshnewberg.com" />
-  <meta property="og:description" content="Hair • Esthetics • Injectables. Book with our artists at POSH in Newberg, OR." />
-  <!-- UPDATE: Use your colorful logo for link shares -->
-  <meta property="og:image" content="https://poshnewberg.com/assets/Posh_Colorful-1.png" />
+  <meta property="og:description"
+    content="Independent artists under one roof. Book directly with your pro at POSH in Newberg, OR." />
+  <meta property="og:image" content="https://poshnewberg.com/assets/Posh_sticker-logo-AddHair.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:type" content="image/png" />
+  
+  <!-- Generic image meta (some crawlers look for this) -->
+  <meta name="image" content="https://poshnewberg.com/assets/Posh_sticker-logo-AddHair.png" />
+  
+  <!-- Twitter Card (also used by a bunch of apps for previews) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="POSH — Hair, Esthetics &amp; Injectables in Newberg, Oregon" />
+  <meta name="twitter:description"
+    content="Independent artists under one roof. Book directly with your pro at POSH in Newberg, OR." />
+  <meta name="twitter:image" content="https://poshnewberg.com/assets/Posh_sticker-logo-AddHair.png" />
 
-  <!-- LocalBusiness JSON-LD (update address/email when you have them) -->
+  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HairSalon",
-    "name": "POSH",
-    "image": [
-      "https://poshnewberg.com/assets/Posh_Colorful-1.png"
-    ],
+    "@id": "https://poshnewberg.com/#business",
+    "name": "POSH — Innovative Artistry",
+    "image": "https://poshnewberg.com/assets/Posh_sticker-logo-AddHair.png",
     "url": "https://poshnewberg.com",
     "telephone": "(503) 538-7056",
     "address": {
@@ -48,11 +64,20 @@
       "postalCode": "97132",
       "addressCountry": "US"
     },
-    "openingHours": "Tu-Fr 10:00-18:00",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.3000,
+      "longitude": -122.9700
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00" }
+    ],
     "priceRange": "$$"
   }
   </script>
 </head>
+
+
 
 <body>
   <!-- Scroll progress -->
