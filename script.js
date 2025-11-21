@@ -19,7 +19,7 @@ const ARTISTS = [
     photo: "assets/CyndiePhillips.jpg",
     blurb:
       "Experienced stylist specializing in precision cuts, classic color, and healthy hair.",
-    email: "firststreetposh@gmail.com", // TODO: update when ready
+    email: "firststreetposh@gmail.com",
     phone: "(503) 538-7056",
     links: {
       website: null, // e.g. "https://poshnewberg.com/cyndie"
@@ -32,14 +32,13 @@ const ARTISTS = [
     name: "Riley Johnisee",
     role: "Stylist",
     services: ["hair"],
-    // UPDATE PHOTO: Riley headshot
     photo: "assets/Riley-profile-img.jpg",
     blurb: "Cut, color, and styles tailored to your vibe. Book online.",
     email: null, // placeholder
     phone: "(503) 915-5328", // placeholder
     links: {
       website: "https://hairbyrileyyy.glossgenius.com",
-      booking: "https://hairbyrileyyy.glossgenius.com",
+      booking: "https://hairbyrileyyy.glossgenius.com/services",
       instagram: "https://www.instagram.com/hair.by.rileyyy/",
     },
   },
@@ -69,12 +68,13 @@ const ARTISTS = [
     photo: "assets/Dottie_profile_main.JPG",
     blurb:
       "Botox and wellness services in a comfortable, client-first setting.",
-    email: "dottie@poshnewberg.com", // placeholder
+    email: "dottie@winecountrybeauty.com",
     phone: "(503) 710-7494",
     links: {
-      website: "https://example.com/wcbw", // placeholder until she has one
-      booking: "#contact",
-      instagram: "#",
+      website: "https://www.winecountrybeauty.com/",
+      booking:
+        "https://winecountrybeautyandwellness.myaestheticrecord.com/online-booking",
+      instagram: "https://www.instagram.com/winecountrybeautyandwellness_",
     },
   },
 ];
