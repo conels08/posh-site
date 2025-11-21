@@ -46,35 +46,126 @@
     content="Independent artists under one roof. Book directly with your pro at POSH in Newberg, OR." />
   <meta name="twitter:image" content="https://poshnewberg.com/assets/Posh_sticker-logo-AddHair.png" />
 
-  <!-- JSON-LD Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HairSalon",
-    "@id": "https://poshnewberg.com/#business",
-    "name": "POSH — Innovative Artistry",
-    "image": "https://poshnewberg.com/assets/Posh_sticker-logo-AddHair.png",
-    "url": "https://poshnewberg.com",
-    "telephone": "(503) 538-7056",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "503 E 1st St",
-      "addressLocality": "Newberg",
-      "addressRegion": "OR",
-      "postalCode": "97132",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 45.3000,
-      "longitude": -122.9700
-    },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00" }
-    ],
-    "priceRange": "$$"
-  }
-  </script>
+    <!-- JSON-LD Schema for POSH + team + services -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "@id": "https://poshnewberg.com/#business",
+        "name": "POSH — Innovative Artistry",
+        "image": "https://poshnewberg.com/assets/Posh_sticker-logo-AddHair.png",
+        "url": "https://poshnewberg.com",
+        "telephone": "+1-503-538-7056",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "503 E 1st St",
+          "addressLocality": "Newberg",
+          "addressRegion": "OR",
+          "postalCode": "97132",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.3000,
+          "longitude": -122.9700
+        },
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "18:00"
+          }
+        ],
+    
+        "founder": {
+          "@type": "Person",
+          "name": "Cyndie Phillips"
+        },
+    
+        "employee": [
+          {
+            "@type": "Person",
+            "@id": "https://poshnewberg.com/#owner-cyndie",
+            "name": "Cyndie Phillips",
+            "jobTitle": "Owner & Stylist",
+            "telephone": "+1-503-538-7056",
+            "email": "firststreetposh@gmail.com"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://poshnewberg.com/#hair-riley",
+            "name": "Riley Johnisee",
+            "jobTitle": "Stylist",
+            "telephone": "+1-503-915-5328",
+            "url": "https://hairbyrileyyy.glossgenius.com",
+            "sameAs": [
+              "https://hairbyrileyyy.glossgenius.com",
+              "https://www.instagram.com/hair.by.rileyyy/"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://poshnewberg.com/#esthetics-kaeli",
+            "name": "Kaeli Tegland",
+            "jobTitle": "Certified Advanced Esthetician",
+            "telephone": "+1-971-281-9373",
+            "email": "info@simplyskinlaserllc.com",
+            "url": "https://www.simplyskinlaserllc.com",
+            "sameAs": [
+              "https://www.simplyskinlaserllc.com",
+              "https://www.instagram.com/simplyskinlaserllc/"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://poshnewberg.com/#inject-dottie",
+            "name": "Dottie Massey",
+            "jobTitle": "Nurse Injector",
+            "telephone": "+1-503-710-7494",
+            "email": "dottie@poshnewberg.com"
+          }
+        ],
+    
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "POSH Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Haircut, Color & Styling",
+                "serviceType": "Hair services"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Facials, Brows & Lashes",
+                "serviceType": "Esthetics services"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Injectables & Wellness",
+                "serviceType": "Injectables"
+              }
+            }
+          ]
+        }
+      }
+      </script>
+
 </head>
 
 
@@ -318,7 +409,8 @@
       <aside class="contact-info">
         <div class="card">
           <h3>POSH — Innovative Artistry</h3>
-          <p>503 E 1st St<br/>Newberg, OR 97132</p>
+          <p>503 E 1st St<br />Newberg, OR 97132</p>
+          <!-- If you change address/hours, also update JSON-LD in <head>, robots.txt & sitemap.xml -->
           <p>
             <!-- UPDATE: main phone/email -->
             <a href="tel:+15035387056">(503) 538-7056</a><br/>
